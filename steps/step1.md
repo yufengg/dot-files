@@ -11,7 +11,8 @@ This is based on https://hackercodex.com/guide/mac-osx-mavericks-10.9-configurat
 4. Check off "Show Library Folder". 
 
 ## Bash profile setup
-Put the bashrc and bash_profile files into your home directory, rename them with dots in front of them.
+Put the `bashrc` and `bash_profile` files into your home directory, rename them with dots in front of them.
+
 Run `source ~./bash_profile`
 
 ## XCode compiler
@@ -19,43 +20,43 @@ Run `xcode-select --install`
 
 ## Homebrew
 (Homebrew)[http://brew.sh/] is useful. Get it.
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-  brew doctor
+  `brew doctor`
 
-  brew update
+  `brew update`
 
 ## Python
-brew install python
+`brew install python`
 
 If you want python 3.x
-brew install python3 
+`brew install python3 `
 
 ## Pip
 Not gonna use a global pip. When installing via Homebrew Python’s pip, packages will be installed to /usr/local/lib/python2.7/site-packages, with binaries placed in /usr/local/bin.
 
 ## Virtualenv
-pip install virtualenv
+`pip install virtualenv`
 
-mkdir -p ~/code/projects ~/code/virtualenvs
+`mkdir -p ~/code/projects ~/code/virtualenvs`
 
-virtualenv foobar
+`virtualenv foobar`
 
-virtualenv -p python3 foobar-py3
+`virtualenv -p python3 foobar-py3`
 
 ## Global pip upgrades/updates
-gpip install --upgrade pip setuptools wheel virtualenv
+`gpip install --upgrade pip setuptools wheel virtualenv`
 
 ## Example workflow
 
-cd ~/code/virtualenvs
-virtualenv bigquery
-cd bigquery
-source bin/activate
-pip install --upgrade google-api-python-client
+`cd ~/code/virtualenvs`
+`virtualenv bigquery`
+`cd bigquery`
+`source bin/activate`
+`pip install --upgrade google-api-python-client`
 
-cd ~/code/projects
-mkdir bigquery-starter
-cd bigquery-starter
-vim start.py
+`cd ~/code/projects`
+`mkdir bigquery-starter`
+`cd bigquery-starter`
+`vim start.py`
  

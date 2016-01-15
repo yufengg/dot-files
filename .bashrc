@@ -1,4 +1,7 @@
+alias 'ls=ls -hF'
 alias 'l=ls -l'
+alias 'll=ls -lrtAhF'
+alias 'la=ls -lA'
 alias 'dk=docker'
 
 # updates PATH for the Google Cloud SDK.

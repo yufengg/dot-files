@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<root>
+	<item>
+	    <name>Change CMD_R+PL;' to arrow keys</name>
+	    <appendix>Map PL;' to the arrow cluster</appendix>
+	    <identifier>private.cmd_plus_p_l_semi_quote_to_arrow_cluster</identifier>
+	    <autogen>__KeyToKey__ KeyCode::P, ModifierFlag::COMMAND_R, KeyCode::CURSOR_UP</autogen>
+	    <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::COMMAND_R, KeyCode::CURSOR_LEFT</autogen>
+	    <autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::COMMAND_R, KeyCode::CURSOR_DOWN</autogen>
+	    <autogen>__KeyToKey__ KeyCode::QUOTE, ModifierFlag::COMMAND_R, KeyCode::CURSOR_RIGHT</autogen>
+		<autogen>__KeyToKey__ KeyCode::O, ModifierFlag::COMMAND_R, KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_R, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L</autogen>
+
+	</item>
+
+	<item>
+		<name>Fn+J to tilde</name>
+	    <identifier>map fn+j to type '~' </identifier>
+    	<autogen>__KeyToKey__ KeyCode::J, ModifierFlag::FN, KeyCode::RUSSIAN_TILDE</autogen>
+	</item>
+	
+	<item>
+	    <name>Change CMD_R+WASD to arrow keys</name>
+	    <appendix>Map PL;' to the arrow cluster</appendix>
+	    <identifier>private.cmd_plus_wasd_to_arrow_cluster</identifier>
+	    <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::COMMAND_R, KeyCode::CURSOR_UP</autogen>
+	    <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::COMMAND_R, KeyCode::CURSOR_LEFT</autogen>
+	    <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::COMMAND_R, KeyCode::CURSOR_DOWN</autogen>
+	    <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::COMMAND_R, KeyCode::CURSOR_RIGHT</autogen>
+	</item>
+
+	<item>
+	    <name>Change CTRL+WASD to arrow keys</name>
+ 	    <appendix>Map ctrl+wasd to the arrow cluster</appendix>
+	    <identifier>private.ctrl_plus_wasd_to_arrow_cluster</identifier>
+	    <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::CONTROL_L, KeyCode::CURSOR_UP</autogen>
+	    <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::CONTROL_L, KeyCode::CURSOR_LEFT</autogen>
+	    <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::CONTROL_L, KeyCode::CURSOR_DOWN</autogen>
+	    <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::CONTROL_L, KeyCode::CURSOR_RIGHT</autogen>
+
+	    <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::CONTROL_L, KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::CONTROL_L, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L</autogen>
+	</item>
+	
+	<item>
+	    <name>Change Left CMD+hjkl to arrow keys</name>
+	    <appendix>Map left CMD + hjkl to the vim arrows</appendix>
+	    <identifier>private.cmd_hjkl_vim_arrows</identifier>
+	    <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::COMMAND_L, KeyCode::CURSOR_UP</autogen>
+	    <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::COMMAND_L, KeyCode::CURSOR_LEFT</autogen>
+	    <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::COMMAND_L, KeyCode::CURSOR_DOWN</autogen>
+	    <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::COMMAND_L, KeyCode::CURSOR_RIGHT</autogen>
+	</item>
+	
+	<item>
+	    <name>Change Left Option+hjkl to arrow keys</name>
+	    <appendix>Map left Option + hjkl to the vim arrows</appendix>
+	    <identifier>private.option_hjkl_vim_arrows</identifier>
+	    <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::OPTION_L, KeyCode::CURSOR_UP</autogen>
+	    <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::OPTION_L, KeyCode::CURSOR_LEFT</autogen>
+	    <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::OPTION_L, KeyCode::CURSOR_DOWN</autogen>
+	    <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::OPTION_L, KeyCode::CURSOR_RIGHT</autogen>
+	</item>
+	
+	<item>
+		<name>Disable arrow keys</name>
+		<appendix>Arrow keys map to caps lock!</appendix>
+		<identifier>private.disable arrow keys</identifier>
+		<autogen>__KeyToKey__ KeyCode::CURSOR_UP, KeyCode::CAPSLOCK</autogen>
+		<autogen>__KeyToKey__ KeyCode::CURSOR_DOWN, KeyCode::CAPSLOCK</autogen>
+		<autogen>__KeyToKey__ KeyCode::CURSOR_LEFT, KeyCode::CAPSLOCK</autogen>
+		<autogen>__KeyToKey__ KeyCode::CURSOR_RIGHT, KeyCode::CAPSLOCK</autogen>
+	</item>
+	
+	
+</root>

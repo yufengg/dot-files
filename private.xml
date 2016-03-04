@@ -16,7 +16,7 @@
 	<item>
 		<name>Fn+J to tilde</name>
 	    <identifier>map fn+j to type '~' </identifier>
-    	<autogen>__KeyToKey__ KeyCode::J, ModifierFlag::FN, KeyCode::RUSSIAN_TILDE</autogen>
+    	<autogen>__KeyToKey__ KeyCode::J, ModifierFlag::FN, KeyCode::RUSSIAN_TILDE, ModifierFlag::SHIFT_L</autogen>
 	</item>
 	
 	<item>

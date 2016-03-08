@@ -15,8 +15,16 @@
 
 	<item>
 		<name>Fn+J to tilde</name>
-	    <identifier>map fn+j to type '~' </identifier>
+	    <appendix>map fn+j to type '~' </appendix>
+	    <identifier>private.fn_j_to_tilde</identifier>
     	<autogen>__KeyToKey__ KeyCode::J, ModifierFlag::FN, KeyCode::RUSSIAN_TILDE, ModifierFlag::SHIFT_L</autogen>
+	</item>
+
+	<item>
+		<name>COMMAND_R + DELETE = FORWARD_DELETE</name>
+		<appendix>Map right command + backspace to be delete</appendix>
+		<identifier>private.command_backspace_to_delete</identifier>
+		<autogen>__KeyToKey__ KeyCode::DELETE, ModifierFlag::COMMAND_R, KeyCode::FORWARD_DELETE</autogen>
 	</item>
 	
 	<item>

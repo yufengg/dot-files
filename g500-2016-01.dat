@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<obprofiles xmlns="http://www.logitech.com/Cassandra/2013.1/OnboardProfile">
+  <profile name="">
+    <device anglesnapping="0" model="Logitech.Gaming.Mouse.G500s" color="#ff00ff" reportrate="1000" buttoncount="10">
+      <dpitable currentindex="1" defaultindex="1">
+        <dpi x="1800" y="1800"/>
+        <dpi x="2750" y="2750"/>
+        <dpi x="3700" y="3700"/>
+        <dpi x="0" y="0"/>
+        <dpi x="0" y="0"/>
+      </dpitable>
+    </device>
+    <buttons>
+      <button name="Left Click" number="1">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="leftclick"/>
+        </mousefunction>
+      </button>
+      <button name="Right Click" number="2">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="rightclick"/>
+        </mousefunction>
+      </button>
+      <button name="Middle Click" number="3">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="middleclick"/>
+        </mousefunction>
+      </button>
+      <button name="Left Cmd + LBRACKET" number="4">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="LBRACKET"/>
+          <modifier value="LGUI"/>
+        </keystroke>
+      </button>
+      <button name="Left Cmd + RBRACKET" number="5">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="RBRACKET"/>
+          <modifier value="LGUI"/>
+        </keystroke>
+      </button>
+      <button name="Ctrl + Up" number="6">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="UP"/>
+          <modifier value="LCTRL"/>
+        </keystroke>
+      </button>
+      <button name="prevspace" number="7">
+        <multikey xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MultiKey">
+          <key value="LCTRL" direction="down"/>
+          <key value="LEFT" direction="down"/>
+          <key value="LEFT" direction="up"/>
+          <key value="LCTRL" direction="up"/>
+        </multikey>
+      </button>
+      <button name="nextspace" number="8">
+        <multikey xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MultiKey">
+          <key value="LCTRL" direction="down"/>
+          <key value="RIGHT" direction="down"/>
+          <key value="RIGHT" direction="up"/>
+          <key value="LCTRL" direction="up"/>
+        </multikey>
+      </button>
+      <button name="DPI Up" number="9">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="dpiup"/>
+        </mousefunction>
+      </button>
+      <button name="DPI Down" number="10">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="dpidown"/>
+        </mousefunction>
+      </button>
+    </buttons>
+  </profile>
+</obprofiles>

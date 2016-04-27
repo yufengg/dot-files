@@ -50,13 +50,15 @@ If you have multiple sessions open, running byobu will let you choose an existin
 
 `C-a |`            Split horizontally
 
+`Shift-arrow`      Move among splits
+
 `C-a C`                Create new window
 
 `C-a [0-9]`            Go to window [0-9]
 
-`C-a n OR F4`          Next window
+`C-a n OR F4 OR Alt-right`           Next window
 
-`C-a h OR F3`          Previous window
+`C-a h OR F3 OR Alt-left`          Previous window
 
 `C-a , OR F8`      Rename window. This changes the name in the status bar.
 

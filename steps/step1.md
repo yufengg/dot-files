@@ -18,8 +18,8 @@ Run `source ~./bash_profile`
 ## XCode compiler
 Run `xcode-select --install`
 
-## Homebrew
-(Homebrew)[http://brew.sh/] is useful. Get it.
+## Homebrew (OSX)
+(Homebrew)[http://brew.sh/] is useful. Get it. Only for Mac though, see below for linux.
   `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
   `brew doctor`
@@ -32,11 +32,17 @@ Run `xcode-select --install`
 If you want python 3.x
 `brew install python3 `
 
+## easy_install
+`easy_install --user pip`
+
+Add ~/.local/bin to your $PATH if not already there.
+When installing pip packages, use the --user flag, like so: `pip install --user virtualenv`
+
 ## Pip
 Not gonna use a global pip. When installing via Homebrew Python’s pip, packages will be installed to /usr/local/lib/python2.7/site-packages, with binaries placed in /usr/local/bin.
 
 ## Virtualenv
-`pip install virtualenv`
+`pip install virtualenv` or `pip install --user virtualenv` 
 
 `mkdir -p ~/code/projects ~/code/virtualenvs`
 
@@ -45,7 +51,9 @@ Not gonna use a global pip. When installing via Homebrew Python’s pip, package
 `virtualenv -p python3 foobar-py3`
 
 ## Global pip upgrades/updates
+Create a gpip script in your bashrc that allows you to do global pip upgrades and such: 
 `gpip install --upgrade pip setuptools wheel virtualenv`
+
 
 ## Example workflow
 

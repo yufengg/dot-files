@@ -2,11 +2,11 @@
 A useful terminal multiplexer abstraction. http://byobu.org/downloads.html
 
 ## Linux install
-sudo apt-get install tmux
-sudo apt-get install byobu
+`sudo apt-get install tmux`
+`sudo apt-get install byobu`
 
 ## OSX Install
-brew install byobu
+`brew install byobo`
 
 ## Setting things up
 `byobu` starts up Byobu to do some initial configuration. The first time you start byobu, you will be asked to choose between screen and tmux. Choose tmux.

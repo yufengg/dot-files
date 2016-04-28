@@ -23,3 +23,5 @@ gpip(){
    PIP_REQUIRE_VIRTUALENV="" pip "$@"
 }
 
+# orange prompt with blue file path
+PS1='${debian_chroot:+($debian_chroot)}\[\033[38;5;166m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\n\$ '

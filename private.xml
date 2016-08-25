@@ -54,7 +54,7 @@
 	    <name>Change Left CMD+hjkl to arrow keys</name>
 	    <appendix>Map left CMD + hjkl to the vim arrows</appendix>
 	    <identifier>private.cmd_hjkl_vim_arrows</identifier>
-	    <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::COMMAND_L, KeyCode::CURSOR_UP</autogen>
+	    <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::COMMAND_L, KeyCode::CURSOR_UP</autogen>
 	    <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::COMMAND_L, KeyCode::CURSOR_LEFT</autogen>
 	    <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::COMMAND_L, KeyCode::CURSOR_DOWN</autogen>
 	    <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::COMMAND_L, KeyCode::CURSOR_RIGHT</autogen>
@@ -80,5 +80,11 @@
 		<autogen>__KeyToKey__ KeyCode::CURSOR_RIGHT, KeyCode::CAPSLOCK</autogen>
 	</item>
 	
+	<item>
+	    <name>Disable command+shift+W</name>
+	    <appendix>Stop blowing up your windows</appendix>
+	    <identifier>private.disable_cmd_sft_w</identifier>
+	    <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, KeyCode::COMMAND_L</autogen>
+	</item>
 	
 </root>

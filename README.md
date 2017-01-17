@@ -8,6 +8,16 @@ https://hackercodex.com/guide/mac-osx-mavericks-10.9-configuration/
 
 https://hackercodex.com/guide/python-development-environment-on-mac-osx/
 
+## Layering in pyenv for Python 3 environment management
+This was especially useful for doing Anaconda and pip together, as pyenv was able to manage the whole thing from the top. In particular, having the environments triggered automatically based on what directory I was in, was great. 
+
+http://fgimian.github.io/blog/2014/04/20/better-python-version-and-environment-management-with-pyenv/
+
+https://github.com/yyuu/pyenv
+
+https://github.com/yyuu/pyenv-virtualenv
+
+
 ## Karabiner private.xml
 Load this file in for the private.xml for Karabiner for some useful custom bindings.
 

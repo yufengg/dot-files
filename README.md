@@ -18,9 +18,11 @@ Install and set up using the following commands:
     sudo apt-get install curl git-core gcc make zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev libssl-dev
     curl -L https://raw.github.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
 
-    echo 'export PATH="${HOME}/.pyenv/bin:$PATH"
+    echo '#pyenv config
+    export PATH="${HOME}/.pyenv/bin:$PATH"
     eval "$(pyenv init -)"
-    eval "$(pyenv virtualenv-init -)" ' >> ~/.bash_profile
+    eval "$(pyenv virtualenv-init -)" 
+    export PYENV_VIRTUALENV_DISABLE_PROMPT=1' >> ~/.bash_profile
 
     source ~/.bash_profile
     

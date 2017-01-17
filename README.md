@@ -11,7 +11,35 @@ https://hackercodex.com/guide/python-development-environment-on-mac-osx/
 ## Layering in pyenv for Python 3 environment management
 This was especially useful for doing Anaconda and pip together, as pyenv was able to manage the whole thing from the top. In particular, having the environments triggered automatically based on what directory I was in, was great. 
 
-http://fgimian.github.io/blog/2014/04/20/better-python-version-and-environment-management-with-pyenv/
+Copied from http://fgimian.github.io/blog/2014/04/20/better-python-version-and-environment-management-with-pyenv/
+
+Install and set up using the following commands: 
+
+    sudo apt-get install curl git-core gcc make zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev libssl-dev
+    curl -L https://raw.github.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
+
+    echo 'export PATH="${HOME}/.pyenv/bin:$PATH"
+    eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)" ' >> ~/.bash_profile
+
+    source ~/.bash_profile
+    
+Once installed, list python versions via `pyenv install -l`
+
+To install a particular version (make it available for envs), `pyenv install <version>`, e.g. `pyenv install 3.5.3`
+
+Virtualenvs: Create, list, show current, activate, deactive, and delete
+
+    pyenv virtualenv <env name>
+    pyenv versions
+    pyenv version
+    pyenv activate <env name>
+    pyenv deactivate
+    pyenv uninstall <env or version>
+   
+Set the local (directory) pyenv: `pyenv local <version or env name>`
+
+Set the global python version/env: `pyenv global <version or env name>`
 
 https://github.com/yyuu/pyenv
 

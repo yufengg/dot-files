@@ -56,7 +56,8 @@ keycodes: https://github.com/tekezo/Karabiner/blob/master/src/bridge/generator/k
 modifier keys: https://github.com/tekezo/Karabiner/blob/version_10.1.0/src/bridge/generator/keycode/data/ModifierFlag.data
 
 ## Ei-kana
-I've been using https://ei-kana.appspot.com/ to map global shortcuts. It doesn't know the difference between left and right cmd, so I use ctrl + vim-bindings on the right, and ctrl+WASD on the left.
+I've been using https://ei-kana.appspot.com/ to map global shortcuts. It doesn't know the difference between left and right cmd, so I use ctrl + vim-bindings on the right, and ctrl+WASD on the left. I also bound cmd+j to the ~. Might do fn+j instead.
+Disable Secure Keyboard Entry on iTerm2 in order to make this work in iTerm2.
 
 ## Logitech mouse configs
 Has settings for sensitivity and remapping left and right scroll to nav screens on OSX, and to map the middle thumb to mission control, and swaps back and forward thumb buttons

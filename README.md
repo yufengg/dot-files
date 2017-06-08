@@ -48,12 +48,15 @@ https://github.com/yyuu/pyenv
 https://github.com/yyuu/pyenv-virtualenv
 
 
-## Karabiner private.xml
+## (no longer valid until Karabiner updates) Karabiner private.xml
 Load this file in for the private.xml for Karabiner for some useful custom bindings.
 
 keycodes: https://github.com/tekezo/Karabiner/blob/master/src/bridge/generator/keycode/data/KeyCode.data
 
 modifier keys: https://github.com/tekezo/Karabiner/blob/version_10.1.0/src/bridge/generator/keycode/data/ModifierFlag.data
+
+## Ei-kana
+I've been using https://ei-kana.appspot.com/ to map global shortcuts. It doesn't know the difference between left and right cmd, so I use ctrl + vim-bindings on the right, and ctrl+WASD on the left.
 
 ## Logitech mouse configs
 Has settings for sensitivity and remapping left and right scroll to nav screens on OSX, and to map the middle thumb to mission control, and swaps back and forward thumb buttons

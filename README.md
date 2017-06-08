@@ -47,6 +47,9 @@ https://github.com/yyuu/pyenv
 
 https://github.com/yyuu/pyenv-virtualenv
 
+## Get byobu
+http://byobu.co/ 
+`brew install byobu`
 
 ## (no longer valid until Karabiner updates) Karabiner private.xml
 Load this file in for the private.xml for Karabiner for some useful custom bindings.

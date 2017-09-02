@@ -49,6 +49,7 @@ https://github.com/yyuu/pyenv-virtualenv
 
 ## Get byobu
 http://byobu.co/ 
+
 `brew install byobu`
 
 ## (no longer valid until Karabiner updates) Karabiner private.xml
@@ -67,3 +68,10 @@ Disable Secure Keyboard Entry on iTerm2 in order to make this work in iTerm2.
 
 ## Logitech mouse configs
 Has settings for sensitivity and remapping left and right scroll to nav screens on OSX, and to map the middle thumb to mission control, and swaps back and forward thumb buttons
+
+## git configuration
+Run this to make your private email not be exposed on your commits.
+See [here](https://github.com/settings/emails) about keeping your email private on the github web client.
+See [here](https://help.github.com/articles/setting-your-commit-email-address-in-git/) about setting your email address on the commandline git client.
+
+`git config --global user.email "yufengg@users.noreply.github.com"`

@@ -2,8 +2,8 @@
 A useful terminal multiplexer abstraction. http://byobu.org/downloads.html
 
 ## Linux install
-`sudo apt-get install tmux`
-`sudo apt-get install byobu`
+    sudo apt-get install tmux
+    sudo apt-get install byobu
 
 ## OSX Install
 `brew install byobo`

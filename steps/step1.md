@@ -57,14 +57,14 @@ Create a gpip script in your bashrc that allows you to do global pip upgrades an
 
 ## Example workflow
 
-`cd ~/code/virtualenvs`
-`virtualenv bigquery`
-`cd bigquery`
-`source bin/activate`
-`pip install --upgrade google-api-python-client`
+    cd ~/code/virtualenvs
+    virtualenv bigquery
+    cd bigquery
+    source bin/activate
+    pip install --upgrade google-api-python-client
 
-`cd ~/code/projects`
-`mkdir bigquery-starter`
-`cd bigquery-starter`
-`vim start.py`
+    cd ~/code/projects
+    mkdir bigquery-starter
+    cd bigquery-starter
+    vim start.py
  

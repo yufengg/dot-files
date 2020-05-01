@@ -1,3 +1,4 @@
+# `pyenv`
 ## Install pyenv, get a python environment
 
 References:
@@ -28,7 +29,7 @@ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
 libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
 xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
 ```
-
+# `pyenv-virtualenv`
 ## install pyenv-virtualenv
 
 Install
@@ -38,8 +39,28 @@ Install
     echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
     
     exec "$SHELL"
-    
-Go to your project folder, and set version
 
-    pyenv local 3.7.7
-    pyenv virtualenv env
+## Create and activeate a venv
+
+Go to your project folder, and set version and env name
+
+    pyenv virtualenv 3.7.7 env
+    pyenv activate env
+    
+See the version you're on
+
+    pyenv version
+
+## Deactivate, set/unset defaults
+    
+Deactivate
+
+    pyenv deactivate
+    
+Set local project environment default choice
+
+    pyenv local env
+    
+Clear local default env
+
+    pyenv local --unset

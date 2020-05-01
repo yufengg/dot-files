@@ -41,6 +41,7 @@ Install
     exec "$SHELL"
 
 ## Create and activeate a venv
+[Commands reference](https://github.com/pyenv/pyenv/blob/master/COMMANDS.md)
 
 Go to your project folder, and set version and env name
 

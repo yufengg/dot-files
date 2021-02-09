@@ -1,5 +1,9 @@
 # dot-files
-place for useful dot files and other configs
+place for useful dot files and other configs.
+
+If you just need a one-off file, get the raw file's url and curl it, e.g. 
+    
+    $ curl -o .bashrc https://raw.githubusercontent.com/yufengg/dot-files/master/bashrc
 
 ## Homebrew, virtualenv, and python/pip configs 
 These are based the following two posts, which worked as of Jan 2016:

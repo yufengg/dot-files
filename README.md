@@ -52,7 +52,7 @@ https://github.com/yyuu/pyenv
 https://github.com/yyuu/pyenv-virtualenv
 
 ## Get byobu
-http://byobu.co/ 
+http://byobu.org/ 
 
 `brew install byobu`
 

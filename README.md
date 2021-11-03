@@ -56,6 +56,9 @@ http://byobu.org/
 
 `brew install byobu`
 
+## Install gcloud / Google Cloud SDK
+https://cloud.google.com/sdk/docs/install
+
 ## (no longer valid until Karabiner updates) Karabiner private.xml
 Load this file in for the private.xml for Karabiner for some useful custom bindings.
 

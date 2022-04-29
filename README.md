@@ -21,18 +21,32 @@ Install and set up using the following commands:
 
     sudo apt-get install curl git-core gcc make zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev libssl-dev
     curl -L https://raw.github.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
+    
+    # the sed invocation inserts the lines at the start of the file
+    # after any initial comment lines
+    sed -Ei -e '/^([^#]|$)/ {a \
+    export PYENV_ROOT="$HOME/.pyenv"
+    a \
+    export PATH="$PYENV_ROOT/bin:$PATH"
+    a \
+    ' -e ':a' -e '$!{n;ba};}' ~/.profile
+    echo 'eval "$(pyenv init --path)"' >>~/.profile
 
-    echo '#pyenv config
-    export PATH="${HOME}/.pyenv/bin:$PATH"
-    eval "$(pyenv init -)"
-    eval "$(pyenv virtualenv-init -)" 
-    export PYENV_VIRTUALENV_DISABLE_PROMPT=1' >> ~/.bash_profile
+    echo 'eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
+    export PYENV_VIRTUALENV_DISABLE_PROMPT=1' >> ~/.bashrc
 
-    source ~/.bash_profile
+    source ~/.profile
     
 Once installed, list python versions via `pyenv install -l`
 
 To install a particular version (make it available for envs), `pyenv install <version>`, e.g. `pyenv install 3.5.3`
+
+Install pyenv-virtualenv (might not be necessary if the above worked)
+
+    git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
+    
+    echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
 
 Virtualenvs: Create, list, show current, activate, deactive, and delete
 

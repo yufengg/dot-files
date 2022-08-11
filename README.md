@@ -62,13 +62,15 @@ Install and set up using the following commands:
 
 Once installed, list python versions via `pyenv install -l`
 
-To install a particular version (make it available for envs), `pyenv install <version>`, e.g. `pyenv install 3.5.3`
+To install a particular version (make it available for envs), `pyenv install <version>`, e.g. `pyenv install 3.10.4`
 
 Install pyenv-virtualenv (might not be necessary if the above worked)
 
     git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
     
-    echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
+    echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bash_profile
+    
+    exec "$SHELL"
 
 Virtualenvs: Create, list, show current, activate, deactive, and delete
 

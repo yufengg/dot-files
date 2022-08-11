@@ -17,6 +17,26 @@ This was especially useful for doing Anaconda and pip together, as pyenv was abl
 
 Copied from http://fgimian.github.io/blog/2014/04/20/better-python-version-and-environment-management-with-pyenv/
 
+### Installation
+
+pyenv docs: https://github.com/pyenv/pyenv#homebrew-in-macos
+
+#### MAC
+
+    brew install pyenv
+
+Add bash stuff
+
+    echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
+    echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
+    echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
+
+restart shell
+
+    exec "$SHELL"
+
+#### LINUX
+
 Install and set up using the following commands: 
 
     sudo apt-get install curl git-core gcc make zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev libssl-dev
@@ -38,6 +58,8 @@ Install and set up using the following commands:
 
     source ~/.profile
     
+### Configuation and usage
+
 Once installed, list python versions via `pyenv install -l`
 
 To install a particular version (make it available for envs), `pyenv install <version>`, e.g. `pyenv install 3.5.3`
